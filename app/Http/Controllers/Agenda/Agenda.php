@@ -18,6 +18,7 @@ class Agenda extends Controller
                 'DATAHORAINICIO'=> 'required',
                 'DATAHORAFIM'=> 'required',
                 'ASSUNTO'=> 'required',
+                'CONTATO'=> 'required',
                 'RELEVANCIA'=> 'required',
             ],
             [
@@ -25,6 +26,7 @@ class Agenda extends Controller
                 'DATAHORAINICIO.required' => "O campo DATA HORA INICIO é obrigatório!",
                 'DATAHORAFIM.required' => "O campo DATA HORA FIM é obrigatório!",
                 'ASSUNTO.required' => "O campo ASSUNTO é obrigatório!",
+                'CONTATO.required' => "O campo CONTATO é obrigatório!",
                 'RELEVANCIA.required' => "O campo RELEVACIA é obrigatório!",
             ]
         );
@@ -56,6 +58,7 @@ class Agenda extends Controller
             'DATAHORAFIM' => $this->Helpers->TimeStampFormatoBanco($Request->DATAHORAFIM),
             'COMQUEM' => $Request->COMQUEM,
             'ASSUNTO' => $Request->ASSUNTO,
+            'CONTATO' => $Request->CONTATO,
             'RELEVANCIA' => $Request->RELEVANCIA,
             'DESCRICAO' => $Request->DESCRICAO,
             'CRIADOPOR' => Session::get('3WINGS.AUTENTICACAO')->ID,
@@ -103,6 +106,7 @@ class Agenda extends Controller
                 'DATAHORAFIM' => $DadosPreview->DATAHORAFIM,
                 'COMQUEM' => $DadosPreview->COMQUEM,
                 'ASSUNTO' => $DadosPreview->ASSUNTO,
+                'CONTATO' => $DadosPreview->CONTATO,
                 'HTMLRELEVANCIA' => $DadosPreview->HTMLRELEVANCIA,
                 'DESCRICAO' => $DadosPreview->DESCRICAO,
                 'CRIADOEM' => $DadosPreview->CRIADOEM,
@@ -136,6 +140,7 @@ class Agenda extends Controller
                 'DATAHORAFIM' => $DadosCompromissoConcluido->DATAHORAFIM,
                 'COMQUEM' => $DadosCompromissoConcluido->COMQUEM,
                 'ASSUNTO' => $DadosCompromissoConcluido->ASSUNTO,
+                'CONTATO' => $DadosCompromissoConcluido->CONTATO,
                 'HTMLRELEVANCIA' => $DadosCompromissoConcluido->HTMLRELEVANCIA,
                 'DESCRICAO' => $DadosCompromissoConcluido->DESCRICAO,
                 'CRIADOEM' => $DadosCompromissoConcluido->CRIADOEM,

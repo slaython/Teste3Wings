@@ -156,6 +156,9 @@ class Helpers
                 <td class='nk-tb-col tb-col-lg'>
                     <span>{$COMPROMISSO['ASSUNTO']}</span>
                 </td>
+                <td class='nk-tb-col tb-col-lg'>
+                    <span>{$COMPROMISSO['CONTATO']}</span>
+                </td>
                 <td class='nk-tb-col tb-col-md'>
                     <span class='tb-status text-warning'>{$STAUTS->HTMLRELEVANCIA}</span>
                 </td>
@@ -236,6 +239,12 @@ class Helpers
                         </li>
                         <li class='data-item pt-1 pb-1'>
                             <div class='data-col'>
+                                <div class='data-label'>Contato :</div>
+                                <div class='data-value'>{$DADOS['CONTATO']}</div>
+                            </div>
+                        </li>
+                        <li class='data-item pt-1 pb-1'>
+                            <div class='data-col'>
                                 <div class='data-label'>Relevância :</div>
                                 <div class='data-value'>{$DADOS['HTMLRELEVANCIA']}</div>
                             </div>
@@ -275,6 +284,9 @@ class Helpers
                 </td>
                 <td class='nk-tb-col tb-col-lg'>
                     <span class='currency text-success'>{$DADOS['ASSUNTO']}</span>
+                </td>
+                <td class='nk-tb-col tb-col-lg'>
+                    <span class='currency text-success'>{$DADOS['CONTATO']}</span>
                 </td>
                 <td class='nk-tb-col tb-col-md'>
                     <span class='tb-status text-warning'>{$DADOS['HTMLRELEVANCIA']}</span>

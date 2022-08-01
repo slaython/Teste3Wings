@@ -13,7 +13,6 @@
     <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=3.0.2">
     <!--Toastr CSS -->
     <link type="text/css" href="{{ asset('/assets/css/toastr.min.css') }}" rel="stylesheet">
-
     <!--SeetAlert2-->
     <link type="text/css" href="{{ asset('/assets/css/sweetalert2.min.css') }}" rel="stylesheet">
 </head>
@@ -30,7 +29,7 @@
                         <div class="nk-header-wrap">
                             <div class="nk-header-news d-none d-xl-block">
                                 <div class="nk-news-list">
-                                    <a class="nk-news-item" href="#">
+                                    <a class="nk-news-item" href="https://github.com/slaython/Teste3Wings" target="_blank">
                                         <div class="nk-news-icon">
                                             <em class="icon ni ni-card-view"></em>
                                         </div>
@@ -121,6 +120,7 @@
                                                         <th class="nk-tb-col"><span class="sub-text">Agendamento</span></th>
                                                         <th class="nk-tb-col tb-col-mb"><span class="sub-text">Com quem</span></th>
                                                         <th class="nk-tb-col tb-col-md"><span class="sub-text">Assunto</span></th>
+                                                        <th class="nk-tb-col tb-col-md"><span class="sub-text">Contato</span></th>
                                                         <th class="nk-tb-col tb-col-lg"><span class="sub-text">Relevância</span></th>
                                                         <th class="nk-tb-col nk-tb-col-tools text-end">
                                                         </th>
@@ -143,6 +143,9 @@
                                                         </td>
                                                         <td class="nk-tb-col tb-col-lg">
                                                             <span><?= $COMPROMISSO->ASSUNTO; ?></span>
+                                                        </td>
+                                                        <td class="nk-tb-col tb-col-lg">
+                                                            <span><?= $COMPROMISSO->CONTATO; ?></span>
                                                         </td>
                                                         <td class="nk-tb-col tb-col-md">
                                                             <span class="tb-status text-warning"><?= $COMPROMISSO->HTMLRELEVANCIA; ?></span>
@@ -191,6 +194,7 @@
                                                         <th class="nk-tb-col"><span class="sub-text">Agendamento</span></th>
                                                         <th class="nk-tb-col tb-col-mb"><span class="sub-text">Com quem</span></th>
                                                         <th class="nk-tb-col tb-col-md"><span class="sub-text">Assunto</span></th>
+                                                        <th class="nk-tb-col tb-col-md"><span class="sub-text">Contato</span></th>
                                                         <th class="nk-tb-col tb-col-lg"><span class="sub-text">Relevância</span></th>
                                                     </tr>
                                                 </thead>
@@ -211,6 +215,9 @@
                                                         </td>
                                                         <td class="nk-tb-col tb-col-lg">
                                                             <span class="currency text-success"><?= $COMPROMISSO->ASSUNTO; ?></span>
+                                                        </td>
+                                                        <td class="nk-tb-col tb-col-lg">
+                                                            <span class="currency text-success"><?= $COMPROMISSO->CONTATO; ?></span>
                                                         </td>
                                                         <td class="nk-tb-col tb-col-md">
                                                             <span class="tb-status text-warning"><?= $COMPROMISSO->HTMLRELEVANCIA; ?></span>
@@ -290,6 +297,14 @@
                                     <div class="form-control-wrap">
                                         <input name="ASSUNTO" type="text" class="form-control mt-3 form-control-outlined" id="outlined-nome-mpc">
                                         <label class="form-label-outlined" for="outlined-nome-mpc">Assunto</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-0">
+                                <div class="form-group">
+                                    <div class="form-control-wrap">
+                                        <input name="CONTATO" type="text" class="form-control mt-3 form-control-outlined" id="outlined-nome-mpc">
+                                        <label class="form-label-outlined" for="outlined-nome-mpc">Contato</label>
                                     </div>
                                 </div>
                             </div>
